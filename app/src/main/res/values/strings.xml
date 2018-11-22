@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProvaDeliver</string>
+    <string name="texto_main">Prova de Lógica - Deliver IT</string>
+    <string name="button_teste1">TESTE 1 - SUBCONJUNTO</string>
+    <string name="button_teste2">TESTE 2 - CARACTERES</string>
+    <string name="button_adicionar">ADICIONAR</string>
+    <string name="button_somar">SOMAR</string>
+    <string name="text_input_numbers">Digite um número inteiro…</string>
+    <string name="text_set">[ … ]</string>
+    <string name="text_subset">1. Dado um conjunto de números, descobrir o subconjunto em que a soma dos elementos são de máxima soma.</string>
+    <string name="response_subset">[ 0 ]</string>
+</resources>
