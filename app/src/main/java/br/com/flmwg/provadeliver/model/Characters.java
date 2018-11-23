@@ -11,7 +11,7 @@ public class Characters {
     private String word;
 
     public Characters(String word) {
-        this.word = word;
+        this.word = word.toLowerCase();
     }
 
     public String getBiggerSequence() {
@@ -34,7 +34,7 @@ public class Characters {
             }
 
             if (acc == 1) {
-                sequences.add(sequence.toString().toString());
+                sequences.add(sequence.toString());
                 acc = 0;
             }else {
                 sequence = new StringBuilder(String.valueOf(auxNext));
