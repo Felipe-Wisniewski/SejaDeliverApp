@@ -13,9 +13,9 @@ public class SubsetPresenter implements SubsetContract.Presenter {
     private SubsetContract.View view;
     private Subset subset;
 
-    public SubsetPresenter(SubsetContract.View view, Subset subset) {
+    public SubsetPresenter(SubsetContract.View view, ArrayList<Integer> setNumbers) {
         this.view = view;
-        this.subset = subset;
+        this.subset = new Subset(setNumbers);
     }
 
     @Override

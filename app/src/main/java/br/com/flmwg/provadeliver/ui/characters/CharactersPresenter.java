@@ -11,9 +11,9 @@ public class CharactersPresenter implements CharactersContract.Presenter {
     private CharactersContract.View view;
     private Characters characters;
 
-    public CharactersPresenter(CharactersContract.View view, Characters characters) {
+    public CharactersPresenter(CharactersContract.View view, String word) {
         this.view = view;
-        this.characters = characters;
+        this.characters = new Characters(word);
     }
 
     @Override

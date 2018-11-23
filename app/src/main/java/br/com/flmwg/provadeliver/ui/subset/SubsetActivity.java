@@ -29,9 +29,6 @@ public class SubsetActivity extends AppCompatActivity
 
     ArrayList<Integer> setNumbers = new ArrayList<>();
 
-    Subset mSubset;
-    SubsetPresenter mPresenter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,8 +58,7 @@ public class SubsetActivity extends AppCompatActivity
                 break;
 
             case R.id.button_sum:
-                mSubset = new Subset(setNumbers);
-                mPresenter = new SubsetPresenter(this, mSubset);
+                SubsetPresenter mPresenter = new SubsetPresenter(this, setNumbers);
                 mPresenter.getSubset();
                 setNumbers.clear();
                 break;

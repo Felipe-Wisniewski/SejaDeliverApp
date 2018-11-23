@@ -12,7 +12,7 @@ public class CharactersTest {
 
     @Test
     public void shouldReturn_biggerSequence() {
-        chars = new Characters("preessaaao");
+        chars = new Characters("preessaAao");
 
         Assert.assertEquals("aaa", chars.getBiggerSequence());
     }

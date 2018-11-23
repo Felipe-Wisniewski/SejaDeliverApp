@@ -24,9 +24,6 @@ public class CharactersActivity extends AppCompatActivity
     private EditText edtWord;
     private Button btnSearch;
 
-    private Characters mCharacters;
-    private CharactersPresenter mPresenter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,8 +44,7 @@ public class CharactersActivity extends AppCompatActivity
 
                 if (word.length() >= 2 || !word.equals("")) {
                     textInput.setText(word);
-                    mCharacters = new Characters(word);
-                    mPresenter = new CharactersPresenter(this, mCharacters);
+                    CharactersPresenter mPresenter = new CharactersPresenter(this, word);
                     mPresenter.getCharacters();
                 }else {
                     alert(getResources().getString(R.string.error_word_format));
