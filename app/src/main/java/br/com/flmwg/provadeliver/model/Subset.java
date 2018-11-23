@@ -2,6 +2,10 @@ package br.com.flmwg.provadeliver.model;
 
 import java.util.ArrayList;
 
+/**
+ * Classe responsável pelo cálculo do subconjunto em que a soma dos elementos são de máxima soma.
+ * @author Felipe Wisniewski
+ */
 public class Subset {
 
     private ArrayList<Integer> set;

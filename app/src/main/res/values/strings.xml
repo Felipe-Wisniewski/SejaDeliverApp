@@ -1,6 +1,8 @@
 <resources>
 
-    <string name="app_name">ProvaDeliver</string>
+    <string name="app_name">Seja Deliver App</string>
+    <string name="label_subset">Teste 1 - Subconjunto</string>
+    <string name="label_characters">Teste 2 - Caracteres</string>
 
     <string name="texto_main">Prova de Lógica - Deliver IT</string>
     <string name="button_teste1">TESTE 1 - SUBCONJUNTO</string>

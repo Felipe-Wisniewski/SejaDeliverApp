@@ -10,6 +10,10 @@ import br.com.flmwg.provadeliver.R;
 import br.com.flmwg.provadeliver.ui.characters.CharactersActivity;
 import br.com.flmwg.provadeliver.ui.subset.SubsetActivity;
 
+/**
+ * UI principal do app. Com os botões de acesso para os testes.
+ * @author Felipe Wisniewski
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnTestOne;

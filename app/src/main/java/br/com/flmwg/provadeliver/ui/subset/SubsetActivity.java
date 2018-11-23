@@ -1,6 +1,5 @@
 package br.com.flmwg.provadeliver.ui.subset;
 
-import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +14,10 @@ import java.util.ArrayList;
 import br.com.flmwg.provadeliver.R;
 import br.com.flmwg.provadeliver.model.Subset;
 
+/**
+ * UI do teste do subconjunto da máxima soma, entrada de dados e saída do resultado.
+ * @author Felipe Wisniewski
+ */
 public class SubsetActivity extends AppCompatActivity
         implements View.OnClickListener, SubsetContract.View {
 
@@ -34,6 +37,8 @@ public class SubsetActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subset);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         loadComponents();
 
         btnAdd.setOnClickListener(this);
@@ -51,7 +56,6 @@ public class SubsetActivity extends AppCompatActivity
                     alert(getResources().getString(R.string.error_number_format));
                     Log.e("Err", "NumberFormatException" + e);
                 }
-
                 edtNumber.setText("");
                 textInput.setText(setNumbers.toString());
                 break;
@@ -78,7 +82,7 @@ public class SubsetActivity extends AppCompatActivity
         btnSum = findViewById(R.id.button_sum);
     }
 
-    private void alert(String s) {
-        Toast.makeText(SubsetActivity.this, s, Toast.LENGTH_LONG).show();
+    private void alert(String msg) {
+        Toast.makeText(SubsetActivity.this, msg, Toast.LENGTH_LONG).show();
     }
 }

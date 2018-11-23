@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 import br.com.flmwg.provadeliver.model.Subset;
 
+/**
+ * Classe responsável pela comunicação entre View(SubsetActivity) e Model(Subset).
+ * @author Felipe Wisniewski
+ */
 public class SubsetPresenter implements SubsetContract.Presenter {
 
     private SubsetContract.View view;

@@ -2,6 +2,10 @@ package br.com.flmwg.provadeliver.model;
 
 import java.util.ArrayList;
 
+/**
+ * Classe responsável pelo retorno de uma sequência de caracteres que mais aparecem em dada palavra.
+ * @author Felipe Wisniewski
+ */
 public class Characters {
 
     private String word;
