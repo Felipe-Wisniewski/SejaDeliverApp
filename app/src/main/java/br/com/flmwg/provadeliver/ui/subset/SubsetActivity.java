@@ -1,5 +1,6 @@
 package br.com.flmwg.provadeliver.ui.subset;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,7 +34,7 @@ public class SubsetActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subset);
 
-        startComponents();
+        loadComponents();
 
         btnAdd.setOnClickListener(this);
         btnSum.setOnClickListener(this);
@@ -47,9 +48,10 @@ public class SubsetActivity extends AppCompatActivity
                     int number = Integer.valueOf(edtNumber.getText().toString());
                     setNumbers.add(number);
                 }catch (NumberFormatException e) {
-                    alert("Número inválido!");
+                    alert(getResources().getString(R.string.error_number_format));
                     Log.e("Err", "NumberFormatException" + e);
                 }
+
                 edtNumber.setText("");
                 textInput.setText(setNumbers.toString());
                 break;
@@ -68,10 +70,10 @@ public class SubsetActivity extends AppCompatActivity
         textOutput.setText(subset.toString());
     }
 
-    private void startComponents() {
+    private void loadComponents() {
         textInput = findViewById(R.id.text_input_subset);
         textOutput = findViewById(R.id.text_output_subset);
-        edtNumber = findViewById(R.id.edt_input_numbers);
+        edtNumber = findViewById(R.id.edt_input_number);
         btnAdd = findViewById(R.id.button_add);
         btnSum = findViewById(R.id.button_sum);
     }

@@ -13,7 +13,7 @@ public class CharactersPresenter implements CharactersContract.Presenter {
     }
 
     @Override
-    public void getCharacteres() {
-
+    public void getCharacters() {
+        view.showCharacters(characters.getBiggerSequence());
     }
 }

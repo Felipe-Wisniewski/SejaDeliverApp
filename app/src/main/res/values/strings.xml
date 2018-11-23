@@ -1,12 +1,23 @@
 <resources>
+
     <string name="app_name">ProvaDeliver</string>
+
     <string name="texto_main">Prova de Lógica - Deliver IT</string>
     <string name="button_teste1">TESTE 1 - SUBCONJUNTO</string>
     <string name="button_teste2">TESTE 2 - CARACTERES</string>
+
+    <string name="text_subset">1. Dado um conjunto de números, descobrir o subconjunto em que a soma dos elementos são de máxima soma.</string>
+    <string name="text_set">[ … ]</string>
+    <string name="response_subset">[ 0 ]</string>
+    <string name="text_input_numbers">Digite um número inteiro…</string>
     <string name="button_adicionar">ADICIONAR</string>
     <string name="button_somar">SOMAR</string>
-    <string name="text_input_numbers">Digite um número inteiro…</string>
-    <string name="text_set">[ … ]</string>
-    <string name="text_subset">1. Dado um conjunto de números, descobrir o subconjunto em que a soma dos elementos são de máxima soma.</string>
-    <string name="response_subset">[ 0 ]</string>
+
+    <string name="text_characters">2. Dada uma palavra, escreva um algoritmo que retorne a sequência de caracteres que mais aparecem em sequência.</string>
+    <string name="text_input_word">Digite uma palavra…</string>
+    <string name="button_buscar">BUSCAR CARACTERES</string>
+
+    <string name="error_number_format">Número inválido!</string>
+    <string name="error_word_format">Palavra inválida!</string>
+
 </resources>
